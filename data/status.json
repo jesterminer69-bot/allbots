@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T22:20:59Z",
+  "generated_at": "2026-05-09T22:26:02Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T22:20:58Z",
+      "source_updated_at": "2026-05-09T22:26:02Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "CROSS_MOJO",
-      "director_cycle": 90,
+      "director_cycle": 94,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -68,7 +68,7 @@
         {
           "name": "CROSS_MOJO",
           "status": "running",
-          "done": 9,
+          "done": 2,
           "total": 18,
           "promotions": 0
         }
@@ -76,32 +76,32 @@
       "lanes": [
         {
           "lane": 1,
-          "regime": "BULL_EUPHORIA",
+          "regime": "BEAR_TREND",
           "status": "active"
         },
         {
           "lane": 2,
-          "regime": "BULL_EUPHORIA",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
           "lane": 3,
-          "regime": "BULL_EUPHORIA",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
           "lane": 4,
-          "regime": "BULL_IMPULSE",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
           "lane": 5,
-          "regime": "BULL_IMPULSE",
+          "regime": "DEFENSIVE_DRIFT",
           "status": "active"
         },
         {
           "lane": 6,
-          "regime": "BULL_IMPULSE",
+          "regime": "DEFENSIVE_DRIFT",
           "status": "active"
         }
       ],
@@ -275,62 +275,13 @@
           "reason": "",
           "regime": "BEAR_TREND",
           "score": -71.692635
-        },
-        {
-          "apr_estimate": 0.0061,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -37.032955
-        },
-        {
-          "apr_estimate": 0.0084,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -37.397586
-        },
-        {
-          "apr_estimate": -0.001,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -69.331753
-        },
-        {
-          "apr_estimate": 0.0171,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -30.870436
-        },
-        {
-          "apr_estimate": 0.0277,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": 33.923232
-        },
-        {
-          "apr_estimate": 0.029,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": -3.410262
-        },
-        {
-          "apr_estimate": 0.0264,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": 112.263859
         }
       ],
       "rejection_summary": {
-        "apr_degrade_reject": 1,
+        "apr_degrade_reject": 2,
         "no_champion_payload": 0,
         "not_better_than_parent": 3,
-        "strict_gate_reject": 2,
+        "strict_gate_reject": 1,
         "worker_errors": 0
       },
       "errors": [],
