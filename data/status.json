@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T17:45:59Z",
+  "generated_at": "2026-05-09T17:52:25Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -27,15 +27,15 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T17:45:59Z",
+      "source_updated_at": "2026-05-09T17:51:01Z",
       "app": "Profit Monkey V2",
       "version": "2.2.2-targeted-aggression-history",
       "current_run": "targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL",
-      "current_goal": "Master Director infinite mode running (targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL): Calibrate -> Standard -> Rescue -> Cross Mojo",
-      "phase": "RESCUE",
-      "director_cycle": 44,
+      "current_goal": "Master Director stopped manually. Champions were saved after the last completed phase.",
+      "phase": "CROSS_MOJO",
+      "director_cycle": 50,
       "aggression_mode": "progressive",
-      "progressive_level": 2,
+      "progressive_level": 4,
       "symbol": "XBTUSD",
       "workers": 6,
       "workers_verified": 6,
@@ -59,22 +59,22 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "idle",
-          "done": 12,
-          "total": 12,
+          "done": 16,
+          "total": 16,
           "promotions": 0
         },
         {
           "name": "RESCUE",
-          "status": "running",
-          "done": 3,
-          "total": 12,
+          "status": "idle",
+          "done": 16,
+          "total": 16,
           "promotions": 0
         },
         {
           "name": "CROSS_MOJO",
-          "status": "idle",
-          "done": 10,
-          "total": 10,
+          "status": "running",
+          "done": 2,
+          "total": 14,
           "promotions": 0
         }
       ],
@@ -101,7 +101,7 @@
         },
         {
           "lane": 5,
-          "regime": "BULL_EUPHORIA",
+          "regime": "BULL_IMPULSE",
           "status": "active"
         },
         {
@@ -121,7 +121,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "risk_overlay_cash_exit_v204",
-          "process": "rescue",
+          "process": "idle",
           "champion_id": "PM2_RISK_OVERLAY_BEAR_DUMP",
           "last_promotion": "Not reported yet"
         },
@@ -149,7 +149,7 @@
           "drawdown_pct": -0.0161,
           "trades": 4,
           "family": "rescue_wild_wild_v204",
-          "process": "rescue",
+          "process": "cross mojo",
           "champion_id": "PM2_BULL_EUPHORIA_conservative_92cacea60e_g173_8b89d9ad38_rescue_wild_g34_3887",
           "last_promotion": "Not reported yet"
         },
@@ -163,7 +163,7 @@
           "drawdown_pct": -0.0706,
           "trades": 44,
           "family": "bull_impulse_precision_v219",
-          "process": "rescue",
+          "process": "cross mojo",
           "champion_id": "PM2_BULL_IMPULSE_conservative_g28_61b019f8b1",
           "last_promotion": "Not reported yet"
         },
@@ -219,7 +219,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "risk_overlay_cash_exit_v204",
-          "process": "rescue",
+          "process": "idle",
           "champion_id": "PM2_RISK_OVERLAY_HIGH_VOL_REVERSAL",
           "last_promotion": "Not reported yet"
         },
@@ -268,31 +268,24 @@
       ],
       "recent_results": [
         {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "apr_estimate": 0.0017,
+          "phase": "CROSS_MOJO",
           "reason": "",
-          "regime": "HIGH_VOL_REVERSAL",
-          "score": -30.0
+          "regime": "BULL_IMPULSE",
+          "score": -43.279788
         },
         {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "apr_estimate": -0.0038,
+          "phase": "CROSS_MOJO",
           "reason": "",
-          "regime": "BEAR_DUMP",
-          "score": -30.0
-        },
-        {
-          "apr_estimate": 0.027,
-          "phase": "RESCUE",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": 67.124657
+          "regime": "BULL_IMPULSE",
+          "score": -73.04244
         }
       ],
       "rejection_summary": {
         "no_champion_payload": 0,
-        "not_better_than_parent": 4,
-        "strict_gate_reject": 0,
+        "not_better_than_parent": 3,
+        "strict_gate_reject": 1,
         "worker_errors": 0
       },
       "errors": [],
