@@ -3,17 +3,15 @@ r"""
 Profit GitHub Status Updater
 
 Reads individual bot status.json files, normalizes them into one combined
-data/status.json file, then optionally commits and pushes to GitHub.
+data/status.json file, then commits and pushes to GitHub.
 
 Designed for:
   C:\Users\marcg\Documents\kraken-bot\profit-github
 
-Current source:
-  Profit Monkey V2:
-  C:\Users\marcg\Documents\kraken-bot\profit-monkey-v2\status\status.json
-
-Future placeholders:
-  Profit Ape, Profit Llama, Profit Alcuna
+This version includes:
+  - Windows path unicode fix
+  - automatic git pull --rebase before push
+  - backup-folder ignore protection
 """
 
 from __future__ import annotations
@@ -28,7 +26,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 
-APP_VERSION = "1.0.1-unicode-path-fix"
+APP_VERSION = "1.0.2-pull-rebase-push-fix"
 
 
 def utc_now() -> _dt.datetime:
@@ -369,6 +367,28 @@ def run_cmd(cmd: List[str], cwd: Path) -> Tuple[int, str]:
         return 999, str(exc)
 
 
+def ensure_gitignore(repo_dir: Path) -> None:
+    gitignore = repo_dir / ".gitignore"
+    required = [
+        "_backup_before_web_repair/",
+        "*.bak",
+        "*.bak_*",
+        "__pycache__/",
+        "*.pyc"
+    ]
+    existing = ""
+    if gitignore.exists():
+        existing = gitignore.read_text(encoding="utf-8", errors="ignore")
+    lines = existing.splitlines()
+    changed = False
+    for item in required:
+        if item not in lines:
+            lines.append(item)
+            changed = True
+    if changed:
+        gitignore.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+
+
 def ensure_git_repo(repo_dir: Path, cfg: Dict[str, Any]) -> List[str]:
     notes: List[str] = []
     gh = cfg.get("github", {})
@@ -389,6 +409,8 @@ def ensure_git_repo(repo_dir: Path, cfg: Dict[str, Any]) -> List[str]:
         else:
             notes.append(out)
 
+    ensure_gitignore(repo_dir)
+
     code, out = run_cmd(["git", "remote", "get-url", remote_name], repo_dir)
     if code != 0 and repo_url:
         code2, out2 = run_cmd(["git", "remote", "add", remote_name, repo_url], repo_dir)
@@ -396,6 +418,17 @@ def ensure_git_repo(repo_dir: Path, cfg: Dict[str, Any]) -> List[str]:
     elif repo_url and out.strip() != repo_url:
         notes.append(f"Remote {remote_name} currently points to {out}. Leaving it unchanged.")
 
+    return notes
+
+
+def untrack_ignored_files(repo_dir: Path) -> List[str]:
+    notes: List[str] = []
+    for rel in ["_backup_before_web_repair"]:
+        p = repo_dir / rel
+        if p.exists():
+            code, out = run_cmd(["git", "rm", "-r", "--cached", "--ignore-unmatch", rel], repo_dir)
+            if out:
+                notes.append(out)
     return notes
 
 
@@ -407,30 +440,46 @@ def git_commit_push(repo_dir: Path, cfg: Dict[str, Any]) -> List[str]:
     commit_message = gh.get("commit_message", "Update allbots status")
     push_enabled = bool(gh.get("push_enabled", True))
 
+    untrack_notes = untrack_ignored_files(repo_dir)
+    notes.extend(untrack_notes)
+
     run_cmd(["git", "add", "-A"], repo_dir)
     code, status_out = run_cmd(["git", "status", "--porcelain"], repo_dir)
     if code != 0:
         notes.append(f"git status failed: {status_out}")
         return notes
 
-    if not status_out.strip():
-        notes.append("No Git changes to commit.")
-        return notes
-
-    code, out = run_cmd(["git", "commit", "-m", commit_message], repo_dir)
-    if code != 0:
-        notes.append(f"git commit failed: {out}")
-        return notes
-    notes.append(out)
-
-    if push_enabled:
-        code, out = run_cmd(["git", "push", "-u", remote_name, branch], repo_dir)
+    if status_out.strip():
+        code, out = run_cmd(["git", "commit", "-m", commit_message], repo_dir)
         if code != 0:
-            notes.append(f"git push failed: {out}")
+            notes.append(f"git commit skipped/failed: {out}")
         else:
             notes.append(out)
     else:
+        notes.append("No local Git changes to commit before pull.")
+
+    if not push_enabled:
         notes.append("Push disabled in config.")
+        return notes
+
+    code, fetch_out = run_cmd(["git", "fetch", remote_name, branch], repo_dir)
+    if code != 0:
+        notes.append(f"git fetch failed: {fetch_out}")
+        return notes
+
+    code, pull_out = run_cmd(["git", "pull", "--rebase", remote_name, branch], repo_dir)
+    if code != 0:
+        notes.append(f"git pull --rebase failed: {pull_out}")
+        notes.append("Manual fix may be needed if Git reports merge conflicts.")
+        return notes
+    if pull_out:
+        notes.append(pull_out)
+
+    code, out = run_cmd(["git", "push", "-u", remote_name, branch], repo_dir)
+    if code != 0:
+        notes.append(f"git push failed: {out}")
+    else:
+        notes.append(out)
 
     return notes
 

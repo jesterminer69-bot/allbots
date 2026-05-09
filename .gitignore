@@ -1,0 +1,5 @@
+_backup_before_web_repair/
+*.bak
+*.bak_*
+__pycache__/
+*.pyc

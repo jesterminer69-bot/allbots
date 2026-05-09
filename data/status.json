@@ -1,9 +1,9 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T17:39:04Z",
+  "generated_at": "2026-05-09T17:40:43Z",
   "generator": {
     "app": "profit-github github_update.py",
-    "version": "1.0.1-unicode-path-fix"
+    "version": "1.0.2-pull-rebase-push-fix"
   },
   "summary": {
     "available_bots": 1,
@@ -27,15 +27,15 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T17:39:03Z",
+      "source_updated_at": "2026-05-09T17:40:35Z",
       "app": "Profit Monkey V2",
       "version": "2.2.2-targeted-aggression-history",
       "current_run": "targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL",
       "current_goal": "Master Director infinite mode running (targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "CALIBRATE_CHAMPIONS",
-      "director_cycle": 36,
+      "director_cycle": 38,
       "aggression_mode": "progressive",
-      "progressive_level": 0,
+      "progressive_level": 1,
       "symbol": "XBTUSD",
       "workers": 6,
       "workers_verified": 6,
@@ -81,23 +81,23 @@
       "lanes": [
         {
           "lane": 1,
-          "regime": "BULL_TREND",
-          "status": "active"
-        },
-        {
-          "lane": 2,
-          "regime": "BEAR_TREND",
-          "status": "active"
-        },
-        {
-          "lane": 3,
           "regime": "BULL_IMPULSE",
           "status": "active"
         },
         {
-          "lane": 4,
+          "lane": 2,
           "regime": "BULL_EUPHORIA",
           "status": "active"
+        },
+        {
+          "lane": 3,
+          "regime": "",
+          "status": "queued"
+        },
+        {
+          "lane": 4,
+          "regime": "",
+          "status": "queued"
         },
         {
           "lane": 5,
@@ -315,6 +315,20 @@
           "reason": "",
           "regime": "DEFENSIVE_DRIFT",
           "score": 73.949038
+        },
+        {
+          "apr_estimate": 0.0,
+          "phase": "CALIBRATE_CHAMPIONS",
+          "reason": "",
+          "regime": "BEAR_TREND",
+          "score": -30.0
+        },
+        {
+          "apr_estimate": 0.0611,
+          "phase": "CALIBRATE_CHAMPIONS",
+          "reason": "",
+          "regime": "BULL_IMPULSE",
+          "score": 29.143526
         }
       ],
       "rejection_summary": {
