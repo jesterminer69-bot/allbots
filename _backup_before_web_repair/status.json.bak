@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T17:39:04Z",
+  "generated_at": "2026-05-09T17:37:23Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.1-unicode-path-fix"
@@ -12,9 +12,9 @@
     "best_current_apr_bot": {
       "id": "profit_monkey",
       "display_name": "Kraken Profit Monkey Trainer",
-      "estimated_apr": 10.2557
+      "estimated_apr": 10.3086
     },
-    "profit_monkey_estimated_apr": 10.2557,
+    "profit_monkey_estimated_apr": 10.3086,
     "profit_monkey_status": "running",
     "profit_monkey_current_run": "targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL"
   },
@@ -27,26 +27,26 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T17:39:03Z",
+      "source_updated_at": "2026-05-09T17:37:20Z",
       "app": "Profit Monkey V2",
       "version": "2.2.2-targeted-aggression-history",
       "current_run": "targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL",
       "current_goal": "Master Director infinite mode running (targeted progressive: BEAR_DUMP, BULL_EUPHORIA, BULL_IMPULSE, HIGH_VOL_REVERSAL): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "CALIBRATE_CHAMPIONS",
-      "director_cycle": 36,
+      "director_cycle": 34,
       "aggression_mode": "progressive",
-      "progressive_level": 0,
+      "progressive_level": 1,
       "symbol": "XBTUSD",
       "workers": 6,
       "workers_verified": 6,
-      "estimated_apr": 10.2557,
+      "estimated_apr": 10.3086,
       "last_combined_test_apr": 29.72,
       "last_combined_test_source": "short_neutral_test.json",
       "champion_coverage_pct": 87.5,
       "active_champion_count": 7,
       "tradable_champion_count": 8,
       "dormant_champion_count": 1,
-      "total_promotions": 5,
+      "total_promotions": 4,
       "phase_promotions": 0,
       "children_per_parent": 3,
       "target_regimes": [
@@ -59,45 +59,45 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "idle",
-          "done": 8,
-          "total": 8,
+          "done": 10,
+          "total": 10,
           "promotions": 0
         },
         {
           "name": "RESCUE",
           "status": "idle",
-          "done": 8,
-          "total": 8,
+          "done": 10,
+          "total": 10,
           "promotions": 0
         },
         {
           "name": "CROSS_MOJO",
           "status": "idle",
-          "done": 6,
-          "total": 6,
+          "done": 8,
+          "total": 8,
           "promotions": 0
         }
       ],
       "lanes": [
         {
           "lane": 1,
-          "regime": "BULL_TREND",
-          "status": "active"
-        },
-        {
-          "lane": 2,
           "regime": "BEAR_TREND",
           "status": "active"
         },
         {
-          "lane": 3,
+          "lane": 2,
           "regime": "BULL_IMPULSE",
           "status": "active"
         },
         {
+          "lane": 3,
+          "regime": "",
+          "status": "queued"
+        },
+        {
           "lane": 4,
-          "regime": "BULL_EUPHORIA",
-          "status": "active"
+          "regime": "",
+          "status": "queued"
         },
         {
           "lane": 5,
@@ -141,16 +141,16 @@
         },
         {
           "regime": "BULL_EUPHORIA",
-          "regime_label": "BULL_EUPHORIA (g34)",
-          "generation": 34,
-          "promotions_total": 1,
-          "score": 112.2639,
-          "apr": 2.64,
-          "drawdown_pct": -0.0161,
+          "regime_label": "BULL_EUPHORIA (g173)",
+          "generation": 173,
+          "promotions_total": 0,
+          "score": 107.7142,
+          "apr": 3.01,
+          "drawdown_pct": -0.0238,
           "trades": 4,
-          "family": "rescue_wild_wild_v204",
+          "family": "conservative_v204",
           "process": "calibrating",
-          "champion_id": "PM2_BULL_EUPHORIA_conservative_92cacea60e_g173_8b89d9ad38_rescue_wild_g34_3887",
+          "champion_id": "PM2_BULL_EUPHORIA_conservative_92cacea60e_g173_8b89d9ad38",
           "last_promotion": "Not reported yet"
         },
         {
@@ -289,6 +289,13 @@
           "score": -30.0
         },
         {
+          "apr_estimate": 0.0301,
+          "phase": "CALIBRATE_CHAMPIONS",
+          "reason": "",
+          "regime": "BULL_EUPHORIA",
+          "score": 107.714164
+        },
+        {
           "apr_estimate": 0.3102,
           "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
@@ -303,18 +310,25 @@
           "score": 1028.072602
         },
         {
-          "apr_estimate": 0.0264,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": 112.263859
-        },
-        {
           "apr_estimate": 0.0162,
           "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
           "regime": "DEFENSIVE_DRIFT",
           "score": 73.949038
+        },
+        {
+          "apr_estimate": 0.0,
+          "phase": "CALIBRATE_CHAMPIONS",
+          "reason": "",
+          "regime": "BEAR_TREND",
+          "score": -30.0
+        },
+        {
+          "apr_estimate": 0.0611,
+          "phase": "CALIBRATE_CHAMPIONS",
+          "reason": "",
+          "regime": "BULL_IMPULSE",
+          "score": 29.143526
         }
       ],
       "rejection_summary": {
@@ -387,7 +401,10 @@
   "warnings": [
     "profit_ape: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-ape\\status\\status.json",
     "profit_llama: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-llama\\status\\status.json",
-    "profit_alcuna: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-alcuna\\status\\status.json"
+    "profit_alcuna: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-alcuna\\status\\status.json",
+    "No .git folder found. Initializing local Git repo.",
+    "Initialized empty Git repository in C:/Users/marcg/Documents/kraken-bot/profit-github/.git/",
+    "Added remote origin."
   ],
   "errors": []
 }
