@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T22:46:13Z",
+  "generated_at": "2026-05-09T22:51:16Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T22:46:08Z",
+      "source_updated_at": "2026-05-09T22:51:16Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "CALIBRATE_CHAMPIONS",
-      "director_cycle": 110,
+      "director_cycle": 114,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -76,33 +76,33 @@
       "lanes": [
         {
           "lane": 1,
-          "regime": "BULL_IMPULSE",
+          "regime": "HIGH_VOL_REVERSAL",
           "status": "active"
         },
         {
           "lane": 2,
-          "regime": "BEAR_TREND",
+          "regime": "RECOVERY_DRIFT",
           "status": "active"
         },
         {
           "lane": 3,
-          "regime": "",
-          "status": "queued"
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "status": "active"
         },
         {
           "lane": 4,
-          "regime": "",
-          "status": "queued"
+          "regime": "SIDEWAYS_BULL_RANGE",
+          "status": "active"
         },
         {
           "lane": 5,
-          "regime": "",
-          "status": "queued"
+          "regime": "DEFENSIVE_DRIFT",
+          "status": "active"
         },
         {
           "lane": 6,
-          "regime": "",
-          "status": "queued"
+          "regime": "BULL_TREND",
+          "status": "active"
         }
       ],
       "champions": [
@@ -275,55 +275,6 @@
           "reason": "",
           "regime": "HIGH_VOL_REVERSAL",
           "score": -30.0
-        },
-        {
-          "apr_estimate": 0.0,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BEAR_DUMP",
-          "score": -30.0
-        },
-        {
-          "apr_estimate": 0.3102,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "RECOVERY_DRIFT",
-          "score": 281.541668
-        },
-        {
-          "apr_estimate": 0.2009,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BULL_TREND",
-          "score": 1028.072602
-        },
-        {
-          "apr_estimate": 0.0264,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BULL_EUPHORIA",
-          "score": 112.263859
-        },
-        {
-          "apr_estimate": 0.0162,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": 73.949038
-        },
-        {
-          "apr_estimate": 0.0648,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -15.290404
-        },
-        {
-          "apr_estimate": 0.0962,
-          "phase": "CALIBRATE_CHAMPIONS",
-          "reason": "",
-          "regime": "BULL_IMPULSE",
-          "score": 33.190633
         }
       ],
       "rejection_summary": {
