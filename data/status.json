@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T20:04:37Z",
+  "generated_at": "2026-05-09T20:09:40Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -26,7 +26,7 @@
       "available": true,
       "status": "idle_or_stale",
       "notes": [
-        "Status file is stale: 2739 seconds old."
+        "Status file is stale: 3042 seconds old."
       ],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
       "source_updated_at": "2026-05-09T19:18:58Z",
