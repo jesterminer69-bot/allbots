@@ -1,3 +1,9 @@
+# Local updater app files - keep on PC, do not publish to GitHub Pages
+github_update.py
+github_update.py.bak*
+config.json
+RUN_GITHUB_UPDATE_*.bat
+README_FIRST.txt
 _backup_before_web_repair/
 *.bak
 *.bak_*
