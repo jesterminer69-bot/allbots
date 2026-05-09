@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T22:00:47Z",
+  "generated_at": "2026-05-09T22:05:50Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T22:00:47Z",
+      "source_updated_at": "2026-05-09T22:05:48Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "STANDARD_EVOLVE",
-      "director_cycle": 75,
+      "director_cycle": 79,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -54,7 +54,7 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "running",
-          "done": 8,
+          "done": 6,
           "total": 27,
           "promotions": 0
         },
@@ -81,12 +81,12 @@
         },
         {
           "lane": 2,
-          "regime": "SIDEWAYS_BULL_RANGE",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
           "lane": 3,
-          "regime": "SIDEWAYS_BULL_RANGE",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
@@ -96,12 +96,12 @@
         },
         {
           "lane": 5,
-          "regime": "DEFENSIVE_DRIFT",
+          "regime": "SIDEWAYS_BULL_RANGE",
           "status": "active"
         },
         {
           "lane": 6,
-          "regime": "DEFENSIVE_DRIFT",
+          "regime": "SIDEWAYS_BULL_RANGE",
           "status": "active"
         }
       ],
@@ -284,11 +284,11 @@
           "score": -30.0
         },
         {
-          "apr_estimate": 0.2801,
+          "apr_estimate": 0.0251,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "RECOVERY_DRIFT",
-          "score": -221.307255
+          "score": -11.292257
         },
         {
           "apr_estimate": 0.0,
@@ -298,25 +298,11 @@
           "score": -30.0
         },
         {
-          "apr_estimate": 0.0346,
+          "apr_estimate": 0.0174,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "RECOVERY_DRIFT",
-          "score": -11.151521
-        },
-        {
-          "apr_estimate": -0.0192,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BULL_RANGE",
-          "score": -75.638713
-        },
-        {
-          "apr_estimate": -0.0493,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BULL_RANGE",
-          "score": -234.579456
+          "score": 19.183369
         }
       ],
       "rejection_summary": {
