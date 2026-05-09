@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-09T20:39:58Z",
+  "generated_at": "2026-05-09T20:45:01Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-09T20:39:57Z",
+      "source_updated_at": "2026-05-09T20:45:01Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
-      "phase": "RESCUE",
-      "director_cycle": 19,
+      "phase": "CALIBRATE_CHAMPIONS",
+      "director_cycle": 23,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -60,8 +60,8 @@
         },
         {
           "name": "RESCUE",
-          "status": "running",
-          "done": 9,
+          "status": "idle",
+          "done": 12,
           "total": 12,
           "promotions": 0
         },
@@ -76,7 +76,7 @@
       "lanes": [
         {
           "lane": 1,
-          "regime": "DEFENSIVE_DRIFT",
+          "regime": "SIDEWAYS_BULL_RANGE",
           "status": "active"
         },
         {
@@ -86,23 +86,23 @@
         },
         {
           "lane": 3,
-          "regime": "DEFENSIVE_DRIFT",
+          "regime": "BULL_TREND",
           "status": "active"
         },
         {
           "lane": 4,
-          "regime": "",
-          "status": "queued"
+          "regime": "BEAR_TREND",
+          "status": "active"
         },
         {
           "lane": 5,
-          "regime": "",
-          "status": "queued"
+          "regime": "BULL_IMPULSE",
+          "status": "active"
         },
         {
           "lane": 6,
-          "regime": "",
-          "status": "queued"
+          "regime": "BULL_EUPHORIA",
+          "status": "active"
         }
       ],
       "champions": [
@@ -116,7 +116,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "risk_overlay_cash_exit_v204",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_RISK_OVERLAY_BEAR_DUMP",
           "last_promotion": "Not reported yet"
         },
@@ -130,7 +130,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "bear_trend_bootstrap_repaired_v217",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_SEED_BEAR_TREND_conservative_g1_7579_wild_g11_8509_conservative_g12_2504",
           "last_promotion": "Not reported yet"
         },
@@ -144,7 +144,7 @@
           "drawdown_pct": -0.0161,
           "trades": 4,
           "family": "rescue_wild_wild_v204",
-          "process": "idle",
+          "process": "calibrating",
           "champion_id": "PM2_BULL_EUPHORIA_conservative_92cacea60e_g173_8b89d9ad38_rescue_wild_g34_3887",
           "last_promotion": "Not reported yet"
         },
@@ -158,7 +158,7 @@
           "drawdown_pct": -0.0706,
           "trades": 44,
           "family": "bull_impulse_precision_v219",
-          "process": "idle",
+          "process": "calibrating",
           "champion_id": "PM2_BULL_IMPULSE_conservative_g28_61b019f8b1",
           "last_promotion": "Not reported yet"
         },
@@ -172,7 +172,7 @@
           "drawdown_pct": -0.1121,
           "trades": 10,
           "family": "conservative_v204",
-          "process": "idle",
+          "process": "calibrating",
           "champion_id": "PM2_BULL_TREND_conservative_92cacea60e_g242_6b3a476647_conservative_g73_8385",
           "last_promotion": "Not reported yet"
         },
@@ -186,7 +186,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "risk_overlay_cash_exit_v204",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_RISK_OVERLAY_CRASH_SHOCK",
           "last_promotion": "Not reported yet"
         },
@@ -200,7 +200,7 @@
           "drawdown_pct": -0.0128,
           "trades": 4,
           "family": "wild_v204",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_SEED_DEFENSIVE_DRIFT_wild_g150_1559_balanced_g2_5251_wild_g68_1622",
           "last_promotion": "Not reported yet"
         },
@@ -214,7 +214,7 @@
           "drawdown_pct": 0.0,
           "trades": 0,
           "family": "risk_overlay_cash_exit_v204",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_RISK_OVERLAY_HIGH_VOL_REVERSAL",
           "last_promotion": "Not reported yet"
         },
@@ -228,7 +228,7 @@
           "drawdown_pct": -0.0495,
           "trades": 10,
           "family": "conservative_v204",
-          "process": "idle",
+          "process": "calibrating",
           "champion_id": "PM2_RECOVERY_DRIFT_conservative_92cacea60e_g134_ff234f58ca",
           "last_promotion": "Not reported yet"
         },
@@ -242,7 +242,7 @@
           "drawdown_pct": -0.0117,
           "trades": 4,
           "family": "conservative_v204",
-          "process": "rescue",
+          "process": "calibrating",
           "champion_id": "PM2_SIDEWAYS_BEAR_RANGE_conservative_92cacea60e_g274_c303e1fb90",
           "last_promotion": "Not reported yet"
         },
@@ -256,7 +256,7 @@
           "drawdown_pct": -0.0265,
           "trades": 10,
           "family": "conservative_v204",
-          "process": "idle",
+          "process": "calibrating",
           "champion_id": "PM2_SIDEWAYS_BULL_RANGE_conservative_92cacea60e_g296_63a007c9bd",
           "last_promotion": "Not reported yet"
         }
@@ -264,73 +264,45 @@
       "recent_results": [
         {
           "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
           "regime": "CRASH_SHOCK",
           "score": -30.0
         },
         {
           "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
           "regime": "HIGH_VOL_REVERSAL",
           "score": -30.0
         },
         {
           "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
           "regime": "BEAR_DUMP",
           "score": -30.0
         },
         {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
+          "apr_estimate": 0.3102,
+          "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -30.0
+          "regime": "RECOVERY_DRIFT",
+          "score": 281.541668
         },
         {
-          "apr_estimate": -0.2032,
-          "phase": "RESCUE",
+          "apr_estimate": 0.2009,
+          "phase": "CALIBRATE_CHAMPIONS",
           "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -245.231479
-        },
-        {
-          "apr_estimate": -0.0877,
-          "phase": "RESCUE",
-          "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -105.250957
-        },
-        {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -30.0
-        },
-        {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -30.0
-        },
-        {
-          "apr_estimate": 0.0,
-          "phase": "RESCUE",
-          "reason": "",
-          "regime": "DEFENSIVE_DRIFT",
-          "score": -30.0
+          "regime": "BULL_TREND",
+          "score": 1028.072602
         }
       ],
       "rejection_summary": {
-        "apr_degrade_reject": 7,
+        "apr_degrade_reject": 2,
         "no_champion_payload": 0,
-        "not_better_than_parent": 4,
-        "strict_gate_reject": 0,
+        "not_better_than_parent": 3,
+        "strict_gate_reject": 1,
         "worker_errors": 0
       },
       "errors": [],
