@@ -1,0 +1,48 @@
+{
+  "github": {
+    "repo_url": "https://github.com/jesterminer69-bot/allbots.git",
+    "branch": "main",
+    "commit_message": "Update allbots status",
+    "remote_name": "origin",
+    "push_enabled": true
+  },
+  "paths": {
+    "local_repo_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-github",
+    "combined_status_relative_path": "data\\status.json"
+  },
+  "update": {
+    "loop_seconds": 300,
+    "stale_after_seconds": 900,
+    "write_pretty_json": true,
+    "copy_site_files_on_start": false
+  },
+  "bots": {
+    "profit_monkey": {
+      "enabled": true,
+      "display_name": "Kraken Profit Monkey Trainer",
+      "kind": "trainer",
+      "status_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json"
+    },
+    "profit_ape": {
+      "enabled": true,
+      "display_name": "Kraken Profit Ape Live Bot",
+      "kind": "live_bot",
+      "status_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-ape\\status\\status.json",
+      "placeholder": true
+    },
+    "profit_llama": {
+      "enabled": true,
+      "display_name": "Alpaca Profit Llama Trainer",
+      "kind": "trainer",
+      "status_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-llama\\status\\status.json",
+      "placeholder": true
+    },
+    "profit_alcuna": {
+      "enabled": true,
+      "display_name": "Alpaca Profit Alcuna Live Bot",
+      "kind": "live_bot",
+      "status_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-alcuna\\status\\status.json",
+      "placeholder": true
+    }
+  }
+}
