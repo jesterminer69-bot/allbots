@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-10T21:44:02Z",
+  "generated_at": "2026-05-10T21:49:05Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -26,10 +26,10 @@
       "available": true,
       "status": "idle_or_stale",
       "notes": [
-        "Status file is stale: 18021 seconds old."
+        "Status file is stale: 18014 seconds old."
       ],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-10 16:43:41",
+      "source_updated_at": "2026-05-10 16:48:51",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
