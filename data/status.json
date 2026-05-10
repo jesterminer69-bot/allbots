@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-10T03:34:14Z",
+  "generated_at": "2026-05-10T03:39:17Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.2-pull-rebase-push-fix"
@@ -11,7 +11,7 @@
     "running_bots": 0,
     "best_current_apr_bot": null,
     "profit_monkey_estimated_apr": null,
-    "profit_monkey_status": "idle",
+    "profit_monkey_status": "idle_or_stale",
     "profit_monkey_current_run": "loading"
   },
   "bots": {
@@ -20,8 +20,10 @@
       "display_name": "Kraken Profit Monkey Trainer",
       "kind": "trainer",
       "available": true,
-      "status": "idle",
-      "notes": [],
+      "status": "idle_or_stale",
+      "notes": [
+        "Status file is stale: 1024 seconds old."
+      ],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
       "source_updated_at": "2026-05-10T03:22:13Z",
       "app": "Profit Monkey V2",
