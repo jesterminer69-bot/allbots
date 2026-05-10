@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-10T13:24:04Z",
+  "generated_at": "2026-05-10T13:29:07Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-10T13:24:01Z",
+      "source_updated_at": "2026-05-10T13:27:58Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "CROSS_MOJO",
-      "director_cycle": 5,
+      "director_cycle": 8,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -277,18 +277,18 @@
           "score": -80.848231
         },
         {
-          "apr_estimate": -0.0075,
-          "phase": "CROSS_MOJO",
-          "reason": "",
-          "regime": "BEAR_TREND",
-          "score": -71.675131
-        },
-        {
           "apr_estimate": -0.0164,
           "phase": "CROSS_MOJO",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
           "score": -74.420969
+        },
+        {
+          "apr_estimate": -0.0075,
+          "phase": "CROSS_MOJO",
+          "reason": "",
+          "regime": "BEAR_TREND",
+          "score": -71.675131
         },
         {
           "apr_estimate": -0.0148,
