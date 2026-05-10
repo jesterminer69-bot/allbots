@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-10T04:18:32Z",
+  "generated_at": "2026-05-10T04:23:35Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -8,11 +8,15 @@
   "summary": {
     "available_bots": 1,
     "configured_bots": 4,
-    "running_bots": 0,
-    "best_current_apr_bot": null,
-    "profit_monkey_estimated_apr": null,
-    "profit_monkey_status": "idle_or_stale",
-    "profit_monkey_current_run": "loading"
+    "running_bots": 1,
+    "best_current_apr_bot": {
+      "id": "profit_monkey",
+      "display_name": "Kraken Profit Monkey Trainer",
+      "estimated_apr": 15.4575
+    },
+    "profit_monkey_estimated_apr": 15.4575,
+    "profit_monkey_status": "running",
+    "profit_monkey_current_run": "all champions"
   },
   "bots": {
     "profit_monkey": {
@@ -20,54 +24,266 @@
       "display_name": "Kraken Profit Monkey Trainer",
       "kind": "trainer",
       "available": true,
-      "status": "idle_or_stale",
-      "notes": [
-        "Status file is stale: 3379 seconds old."
-      ],
+      "status": "running",
+      "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-10T03:22:13Z",
+      "source_updated_at": "2026-05-10T04:23:14Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
-      "current_run": "loading",
-      "current_goal": "Loading C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\cache\\raw\\XBTUSD.csv",
-      "phase": "data",
-      "director_cycle": null,
-      "aggression_mode": null,
-      "progressive_level": null,
-      "symbol": null,
-      "workers": null,
-      "workers_verified": null,
-      "estimated_apr": null,
-      "last_combined_test_apr": null,
-      "last_combined_test_source": null,
-      "champion_coverage_pct": null,
-      "active_champion_count": null,
-      "tradable_champion_count": null,
-      "dormant_champion_count": null,
+      "current_run": "all champions",
+      "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
+      "phase": "STANDARD_EVOLVE",
+      "director_cycle": 4,
+      "aggression_mode": "conservative",
+      "progressive_level": 0,
+      "symbol": "XBTUSD",
+      "workers": 6,
+      "workers_verified": 6,
+      "estimated_apr": 15.4575,
+      "last_combined_test_apr": 14.63,
+      "last_combined_test_source": "long_neutral_test.json",
+      "champion_coverage_pct": 100.0,
+      "active_champion_count": 8,
+      "tradable_champion_count": 8,
+      "dormant_champion_count": 0,
       "total_promotions": 0,
       "phase_promotions": 0,
-      "children_per_parent": null,
+      "children_per_parent": 3,
       "target_regimes": [],
-      "engines": [],
-      "lanes": [],
-      "champions": [],
+      "engines": [
+        {
+          "name": "STANDARD_EVOLVE",
+          "status": "running",
+          "done": 0,
+          "total": 27,
+          "promotions": 0
+        },
+        {
+          "name": "RESCUE",
+          "status": "idle",
+          "done": 12,
+          "total": 12,
+          "promotions": 0
+        },
+        {
+          "name": "CROSS_MOJO",
+          "status": "idle",
+          "done": 18,
+          "total": 18,
+          "promotions": 0
+        }
+      ],
+      "lanes": [
+        {
+          "lane": 1,
+          "regime": "BEAR_DUMP",
+          "status": "active"
+        },
+        {
+          "lane": 2,
+          "regime": "CRASH_SHOCK",
+          "status": "active"
+        },
+        {
+          "lane": 3,
+          "regime": "HIGH_VOL_REVERSAL",
+          "status": "active"
+        },
+        {
+          "lane": 4,
+          "regime": "RECOVERY_DRIFT",
+          "status": "active"
+        },
+        {
+          "lane": 5,
+          "regime": "RECOVERY_DRIFT",
+          "status": "active"
+        },
+        {
+          "lane": 6,
+          "regime": "RECOVERY_DRIFT",
+          "status": "active"
+        }
+      ],
+      "champions": [
+        {
+          "regime": "BEAR_DUMP",
+          "regime_label": "BEAR_DUMP (g0)",
+          "generation": 0,
+          "promotions_total": 0,
+          "score": -30.0,
+          "apr": 0.0,
+          "drawdown_pct": 0.0,
+          "trades": 0,
+          "family": "risk_overlay_cash_exit_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_RISK_OVERLAY_BEAR_DUMP",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "BEAR_TREND",
+          "regime_label": "BEAR_TREND (g82)",
+          "generation": 82,
+          "promotions_total": 8,
+          "score": 59.5183,
+          "apr": 27.53,
+          "drawdown_pct": -0.0731,
+          "trades": 18,
+          "family": "bear_trend_bootstrap_repaired_v217",
+          "process": "standard evol",
+          "champion_id": "PM2_BEAR_TREND_balanced_g165_5743922c5d_conservative_g169_3549_balanced_g82_1954",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "BULL_EUPHORIA",
+          "regime_label": "BULL_EUPHORIA (g114)",
+          "generation": 114,
+          "promotions_total": 8,
+          "score": 579.549,
+          "apr": 23.4,
+          "drawdown_pct": -0.0389,
+          "trades": 4,
+          "family": "balanced_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_BULL_EUPHORIA_conservative_g28_0ff6bab7ca_balanced_g114_1655",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "BULL_IMPULSE",
+          "regime_label": "BULL_IMPULSE (g115)",
+          "generation": 115,
+          "promotions_total": 6,
+          "score": 33.4385,
+          "apr": 9.71,
+          "drawdown_pct": -0.0952,
+          "trades": 42,
+          "family": "bull_impulse_precision_v219",
+          "process": "standard evol",
+          "champion_id": "PM2_BULL_IMPULSE_conservative_g115_72a75f364a",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "BULL_TREND",
+          "regime_label": "BULL_TREND (g73)",
+          "generation": 73,
+          "promotions_total": 0,
+          "score": 1028.0726,
+          "apr": 20.09,
+          "drawdown_pct": -0.1121,
+          "trades": 10,
+          "family": "conservative_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_BULL_TREND_conservative_92cacea60e_g242_6b3a476647_conservative_g73_8385",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "CRASH_SHOCK",
+          "regime_label": "CRASH_SHOCK (g0)",
+          "generation": 0,
+          "promotions_total": 0,
+          "score": -30.0,
+          "apr": 0.0,
+          "drawdown_pct": 0.0,
+          "trades": 0,
+          "family": "risk_overlay_cash_exit_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_RISK_OVERLAY_CRASH_SHOCK",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "DEFENSIVE_DRIFT",
+          "regime_label": "DEFENSIVE_DRIFT (g188)",
+          "generation": 188,
+          "promotions_total": 2,
+          "score": 76.7139,
+          "apr": 1.6,
+          "drawdown_pct": -0.0121,
+          "trades": 4,
+          "family": "conservative_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_DEFENSIVE_DRIFT_conservative_g137_0c13bffcdb_conservative_g188_8912",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "HIGH_VOL_REVERSAL",
+          "regime_label": "HIGH_VOL_REVERSAL (g0)",
+          "generation": 0,
+          "promotions_total": 0,
+          "score": -30.0,
+          "apr": 0.0,
+          "drawdown_pct": 0.0,
+          "trades": 0,
+          "family": "risk_overlay_cash_exit_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_RISK_OVERLAY_HIGH_VOL_REVERSAL",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "RECOVERY_DRIFT",
+          "regime_label": "RECOVERY_DRIFT (g134)",
+          "generation": 134,
+          "promotions_total": 0,
+          "score": 281.5417,
+          "apr": 31.02,
+          "drawdown_pct": -0.0495,
+          "trades": 10,
+          "family": "conservative_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_RECOVERY_DRIFT_conservative_92cacea60e_g134_ff234f58ca",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "regime_label": "SIDEWAYS_BEAR_RANGE (g274)",
+          "generation": 274,
+          "promotions_total": 0,
+          "score": 65.5506,
+          "apr": 1.21,
+          "drawdown_pct": -0.0117,
+          "trades": 4,
+          "family": "conservative_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_SIDEWAYS_BEAR_RANGE_conservative_92cacea60e_g274_c303e1fb90",
+          "last_promotion": "Not reported yet"
+        },
+        {
+          "regime": "SIDEWAYS_BULL_RANGE",
+          "regime_label": "SIDEWAYS_BULL_RANGE (g296)",
+          "generation": 296,
+          "promotions_total": 0,
+          "score": 661.071,
+          "apr": 9.1,
+          "drawdown_pct": -0.0265,
+          "trades": 10,
+          "family": "conservative_v204",
+          "process": "standard evol",
+          "champion_id": "PM2_SIDEWAYS_BULL_RANGE_conservative_92cacea60e_g296_63a007c9bd",
+          "last_promotion": "Not reported yet"
+        }
+      ],
       "recent_results": [],
-      "rejection_summary": {},
+      "rejection_summary": {
+        "apr_degrade_reject": 4,
+        "no_champion_payload": 0,
+        "not_better_than_parent": 1,
+        "strict_gate_reject": 1,
+        "worker_errors": 0
+      },
       "errors": [],
       "warnings": [],
       "session_metrics": {
-        "session_key": "2026-05-10 03:22:13.659962+00:00",
-        "started_tracking_at": "2026-05-10T04:06:27Z",
+        "session_key": "1778386766.8313973",
+        "started_tracking_at": "2026-05-10T04:23:35Z",
         "promotions_this_session": 0,
         "estimated_apr": {
-          "start": null,
-          "now": null,
-          "delta": null
+          "start": 15.4575,
+          "now": 15.4575,
+          "delta": 0.0
         },
         "tested_apr": {
-          "start": null,
-          "now": null,
-          "delta": null
+          "start": 14.63,
+          "now": 14.63,
+          "delta": 0.0
         }
       }
     },
