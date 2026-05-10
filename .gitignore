@@ -9,3 +9,4 @@ _backup_before_web_repair/
 *.bak_*
 __pycache__/
 *.pyc
+.allbots_session_state.json

@@ -29,6 +29,22 @@ function fmtDD(value) {
   return `${fmtNum(value, 2)}%`;
 }
 
+function fmtDelta(value) {
+  if (value === null || value === undefined || value === "") return "";
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "";
+  const sign = n > 0 ? "+" : "";
+  return `${sign}${n.toFixed(2)} pts`;
+}
+
+function deltaClass(value) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return "flat";
+  if (n > 0.005) return "up";
+  if (n < -0.005) return "down";
+  return "flat";
+}
+
 function statusClass(status) {
   const s = String(status || "unknown").toLowerCase();
   if (s === "running") return "status-running";
@@ -39,6 +55,28 @@ function statusClass(status) {
 
 function pill(status) {
   return `<span class="status-pill ${statusClass(status)}">${esc(status || "unknown")}</span>`;
+}
+
+function journeyCard(label, metric) {
+  const start = metric?.start;
+  const now = metric?.now;
+  const delta = metric?.delta;
+  const cls = deltaClass(delta);
+  const startText = start === null || start === undefined ? "Waiting" : fmtAPR(start);
+  const nowText = now === null || now === undefined ? "Waiting" : fmtAPR(now);
+  const deltaText = delta === null || delta === undefined ? "Baseline forming" : fmtDelta(delta);
+
+  return `
+    <section class="card third session-card ${cls}">
+      <div class="session-label">${esc(label)}</div>
+      <div class="journey">
+        <span>${startText}</span>
+        <span class="arrow">→</span>
+        <span>${nowText}</span>
+      </div>
+      <div class="session-delta">${deltaText}</div>
+    </section>
+  `;
 }
 
 async function loadStatus() {
@@ -144,7 +182,10 @@ function renderMonkey(data) {
     return;
   }
 
+  const session = bot.session_metrics || {};
+  const promotions = session.promotions_this_session ?? bot.total_promotions ?? 0;
   const champions = bot.champions || [];
+
   const rows = champions.map(c => `
     <tr>
       <td class="mono">${esc(c.regime_label || c.regime)}</td>
@@ -181,6 +222,18 @@ function renderMonkey(data) {
       <section class="card third metric"><div class="label">Current Estimated APR</div><div class="value">${fmtAPR(bot.estimated_apr)}</div></section>
       <section class="card third metric"><div class="label">Current Status</div><div class="value">${pill(bot.status)}</div></section>
       <section class="card third metric"><div class="label">Director Cycle</div><div class="value">${esc(bot.director_cycle ?? "Not reported")}</div></section>
+
+      <section class="card session-header">
+        <h2>Session Pulse</h2>
+        <div class="small">Start → now progress for the current Profit Monkey run.</div>
+      </section>
+      <section class="card third session-card promo">
+        <div class="session-label">Promotions This Session</div>
+        <div class="journey big-number">${esc(promotions)}</div>
+        <div class="session-delta">${esc(session.session_key ? "Live run total" : "Waiting for run key")}</div>
+      </section>
+      ${journeyCard("Estimated APR", session.estimated_apr)}
+      ${journeyCard("Tested APR", session.tested_apr)}
 
       <section class="card">
         <h2>Current Run</h2>
