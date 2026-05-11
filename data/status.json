@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T15:06:08Z",
+  "generated_at": "2026-05-11T15:11:11Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -23,7 +23,7 @@
       "status": "idle",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T15:05:56Z",
+      "source_updated_at": "2026-05-11T15:11:01Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "transition_exit_lab",
@@ -54,8 +54,8 @@
       "errors": [],
       "warnings": [],
       "session_metrics": {
-        "session_key": "2026-05-11 15:05:56.347551+00:00",
-        "started_tracking_at": "2026-05-11T15:06:08Z",
+        "session_key": "2026-05-11 15:11:01.800801+00:00",
+        "started_tracking_at": "2026-05-11T15:11:11Z",
         "promotions_this_session": 0,
         "estimated_apr": {
           "start": null,
