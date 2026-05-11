@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T15:51:47Z",
+  "generated_at": "2026-05-11T15:57:02Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -12,7 +12,7 @@
     "best_current_apr_bot": null,
     "profit_monkey_estimated_apr": null,
     "profit_monkey_status": "idle",
-    "profit_monkey_current_run": "transition_exit_lab"
+    "profit_monkey_current_run": "loading"
   },
   "bots": {
     "profit_monkey": {
@@ -23,12 +23,12 @@
       "status": "idle",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T15:51:14Z",
+      "source_updated_at": "2026-05-11T15:54:20Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
-      "current_run": "transition_exit_lab",
-      "current_goal": "Transition Exit Lab stopped manually. Additive transition champions were preserved.",
-      "phase": "manual_stop",
+      "current_run": "loading",
+      "current_goal": "Loading C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\cache\\raw\\XBTUSD.csv",
+      "phase": "data",
       "director_cycle": null,
       "aggression_mode": null,
       "progressive_level": null,
@@ -54,8 +54,8 @@
       "errors": [],
       "warnings": [],
       "session_metrics": {
-        "session_key": "2026-05-11 15:51:14.821067+00:00",
-        "started_tracking_at": "2026-05-11T15:51:47Z",
+        "session_key": "2026-05-11 15:54:20.259080+00:00",
+        "started_tracking_at": "2026-05-11T15:57:02Z",
         "promotions_this_session": 0,
         "estimated_apr": {
           "start": null,
