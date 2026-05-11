@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T10:36:59Z",
+  "generated_at": "2026-05-11T10:42:04Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T10:36:58Z",
+      "source_updated_at": "2026-05-11T10:41:58Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "STANDARD_EVOLVE",
-      "director_cycle": 34,
+      "director_cycle": 35,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -54,7 +54,7 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "running",
-          "done": 202,
+          "done": 51,
           "total": 227,
           "promotions": 0
         },
@@ -263,46 +263,39 @@
       ],
       "recent_results": [
         {
+          "apr_estimate": -0.013,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -98.316582
+        },
+        {
+          "apr_estimate": -0.0123,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -98.487233
+        },
+        {
           "apr_estimate": -0.0137,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -98.624803
+          "score": -97.373518
         },
         {
-          "apr_estimate": -0.0136,
+          "apr_estimate": -0.0132,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -97.960638
+          "score": -97.220373
         },
         {
-          "apr_estimate": -0.0121,
+          "apr_estimate": -0.0124,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -98.813312
-        },
-        {
-          "apr_estimate": -0.0152,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -98.322243
-        },
-        {
-          "apr_estimate": -0.0102,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -94.10979
-        },
-        {
-          "apr_estimate": -0.0129,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -94.319133
+          "score": -98.194178
         },
         {
           "apr_estimate": 0.0,
@@ -312,25 +305,32 @@
           "score": -30.0
         },
         {
-          "apr_estimate": -0.0081,
+          "apr_estimate": -0.0145,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -87.468317
+          "score": -98.454638
         },
         {
-          "apr_estimate": -0.0079,
+          "apr_estimate": 0.0,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -88.732532
+          "score": -30.0
         },
         {
-          "apr_estimate": -0.0083,
+          "apr_estimate": -0.0128,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -89.217766
+          "score": -98.716262
+        },
+        {
+          "apr_estimate": -0.0124,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -97.718558
         }
       ],
       "rejection_summary": {
