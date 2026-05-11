@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T08:30:39Z",
+  "generated_at": "2026-05-11T08:35:43Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -27,13 +27,13 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T08:30:39Z",
+      "source_updated_at": "2026-05-11T08:35:42Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
       "current_goal": "Master Director infinite mode running (all champions): Calibrate -> Standard -> Rescue -> Cross Mojo",
       "phase": "STANDARD_EVOLVE",
-      "director_cycle": 26,
+      "director_cycle": 27,
       "aggression_mode": "conservative",
       "progressive_level": 0,
       "symbol": "XBTUSD",
@@ -54,7 +54,7 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "running",
-          "done": 214,
+          "done": 62,
           "total": 227,
           "promotions": 0
         },
@@ -263,74 +263,74 @@
       ],
       "recent_results": [
         {
-          "apr_estimate": -0.0181,
+          "apr_estimate": -0.0234,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -94.0992
+          "score": -95.172354
+        },
+        {
+          "apr_estimate": -0.0273,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -95.461186
+        },
+        {
+          "apr_estimate": -0.0256,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -96.533378
         },
         {
           "apr_estimate": -0.0235,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -92.195421
+          "score": -95.614898
         },
         {
-          "apr_estimate": -0.017,
+          "apr_estimate": -0.0232,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -90.153157
+          "score": -95.057351
         },
         {
-          "apr_estimate": -0.0246,
+          "apr_estimate": -0.0231,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -95.522958
+          "score": -95.148984
         },
         {
-          "apr_estimate": -0.0187,
+          "apr_estimate": -0.0235,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -95.746253
+          "score": -94.732577
         },
         {
-          "apr_estimate": -0.0169,
+          "apr_estimate": -0.0254,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -90.249067
+          "score": -94.655912
         },
         {
-          "apr_estimate": -0.0147,
+          "apr_estimate": -0.0199,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -85.143853
+          "score": -94.74057
         },
         {
-          "apr_estimate": -0.0165,
+          "apr_estimate": -0.0232,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -91.711788
-        },
-        {
-          "apr_estimate": -0.0164,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -89.761258
-        },
-        {
-          "apr_estimate": -0.0212,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -91.610403
+          "score": -95.276822
         }
       ],
       "rejection_summary": {
