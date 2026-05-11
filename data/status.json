@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T04:02:55Z",
+  "generated_at": "2026-05-11T04:07:58Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -27,7 +27,7 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T04:02:52Z",
+      "source_updated_at": "2026-05-11T04:07:55Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
@@ -54,7 +54,7 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "running",
-          "done": 94,
+          "done": 212,
           "total": 227,
           "promotions": 0
         },
@@ -81,7 +81,7 @@
         },
         {
           "lane": 2,
-          "regime": "DEFENSIVE_DRIFT",
+          "regime": "SIDEWAYS_BEAR_RANGE",
           "status": "active"
         },
         {
@@ -91,7 +91,7 @@
         },
         {
           "lane": 4,
-          "regime": "SIDEWAYS_BEAR_RANGE",
+          "regime": "DEFENSIVE_DRIFT",
           "status": "active"
         },
         {
@@ -263,74 +263,74 @@
       ],
       "recent_results": [
         {
-          "apr_estimate": -0.0228,
+          "apr_estimate": 0.0006,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -74.4043
+          "score": -40.079252
         },
         {
-          "apr_estimate": -0.0166,
+          "apr_estimate": -0.0107,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -73.729357
+          "score": -73.73638
         },
         {
-          "apr_estimate": -0.0281,
+          "apr_estimate": -0.0115,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -75.46998
+          "score": -72.51728
         },
         {
-          "apr_estimate": -0.032,
+          "apr_estimate": -0.0205,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -76.249656
+          "score": -75.758757
         },
         {
-          "apr_estimate": -0.0331,
+          "apr_estimate": -0.0039,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -76.390946
+          "score": -73.111472
         },
         {
-          "apr_estimate": -0.0253,
+          "apr_estimate": 0.0,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -75.321201
+          "score": -30.0
         },
         {
-          "apr_estimate": -0.0306,
+          "apr_estimate": -0.0147,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -76.479171
+          "score": -74.551351
         },
         {
-          "apr_estimate": -0.0271,
+          "apr_estimate": -0.0471,
+          "phase": "STANDARD_EVOLVE",
+          "reason": "",
+          "regime": "SIDEWAYS_BEAR_RANGE",
+          "score": -78.82524
+        },
+        {
+          "apr_estimate": 0.0224,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "DEFENSIVE_DRIFT",
-          "score": -77.952253
+          "score": -45.255128
         },
         {
-          "apr_estimate": -0.0248,
+          "apr_estimate": -0.013,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -75.383006
-        },
-        {
-          "apr_estimate": -0.0337,
-          "phase": "STANDARD_EVOLVE",
-          "reason": "",
-          "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -76.579456
+          "score": -73.577556
         }
       ],
       "rejection_summary": {
