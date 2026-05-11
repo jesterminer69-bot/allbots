@@ -1,73 +1,38 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T17:58:24Z",
+  "generated_at": "2026-05-11T18:03:27Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
   },
   "summary": {
-    "available_bots": 1,
+    "available_bots": 0,
     "configured_bots": 4,
     "running_bots": 0,
     "best_current_apr_bot": null,
     "profit_monkey_estimated_apr": null,
-    "profit_monkey_status": "idle",
-    "profit_monkey_current_run": "transition_exit_lab"
+    "profit_monkey_status": "placeholder",
+    "profit_monkey_current_run": "In progress"
   },
   "bots": {
     "profit_monkey": {
       "id": "profit_monkey",
       "display_name": "Kraken Profit Monkey Trainer",
       "kind": "trainer",
-      "available": true,
-      "status": "idle",
-      "notes": [],
-      "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T17:58:24Z",
-      "app": "Profit Monkey V2",
-      "version": "2.2.3-apr-preserving-promotions",
-      "current_run": "transition_exit_lab",
-      "current_goal": "Pre-scanning transition carry-in samples 2125/2438",
-      "phase": "pre_scan_boundary_positions",
-      "director_cycle": null,
-      "aggression_mode": null,
-      "progressive_level": null,
-      "symbol": null,
-      "workers": null,
-      "workers_verified": null,
+      "available": false,
+      "status": "placeholder",
+      "notes": [
+        "Could not read C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json: [Errno 13] Permission denied: 'C:\\\\Users\\\\marcg\\\\Documents\\\\kraken-bot\\\\profit-monkey-v2\\\\status\\\\status.json'"
+      ],
+      "current_run": "In progress",
+      "current_goal": "Placeholder reserved for future status integration.",
       "estimated_apr": null,
-      "last_combined_test_apr": null,
-      "last_combined_test_source": null,
-      "champion_coverage_pct": null,
-      "active_champion_count": null,
-      "tradable_champion_count": null,
-      "dormant_champion_count": null,
-      "total_promotions": 0,
-      "phase_promotions": 0,
-      "children_per_parent": null,
-      "target_regimes": [],
+      "champions": [],
       "engines": [],
       "lanes": [],
-      "champions": [],
       "recent_results": [],
-      "rejection_summary": {},
       "errors": [],
-      "warnings": [],
-      "session_metrics": {
-        "session_key": "2026-05-11 17:58:24.079618+00:00",
-        "started_tracking_at": "2026-05-11T17:58:24Z",
-        "promotions_this_session": 0,
-        "estimated_apr": {
-          "start": null,
-          "now": null,
-          "delta": null
-        },
-        "tested_apr": {
-          "start": null,
-          "now": null,
-          "delta": null
-        }
-      }
+      "warnings": []
     },
     "profit_ape": {
       "id": "profit_ape",
@@ -128,6 +93,7 @@
     }
   },
   "warnings": [
+    "profit_monkey: Could not read C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json: [Errno 13] Permission denied: 'C:\\\\Users\\\\marcg\\\\Documents\\\\kraken-bot\\\\profit-monkey-v2\\\\status\\\\status.json'",
     "profit_ape: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-ape\\status\\status.json",
     "profit_llama: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-llama\\status\\status.json",
     "profit_alcuna: Missing file: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-alcuna\\status\\status.json"
