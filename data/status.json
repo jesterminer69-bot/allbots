@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-11T11:42:43Z",
+  "generated_at": "2026-05-11T11:47:46Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -27,7 +27,7 @@
       "status": "running",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-11T11:42:32Z",
+      "source_updated_at": "2026-05-11T11:47:42Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "all champions",
@@ -54,7 +54,7 @@
         {
           "name": "STANDARD_EVOLVE",
           "status": "running",
-          "done": 80,
+          "done": 164,
           "total": 227,
           "promotions": 0
         },
@@ -263,11 +263,11 @@
       ],
       "recent_results": [
         {
-          "apr_estimate": -0.0124,
+          "apr_estimate": -0.009,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -98.942988
+          "score": -91.177123
         },
         {
           "apr_estimate": 0.0,
@@ -277,11 +277,11 @@
           "score": -30.0
         },
         {
-          "apr_estimate": -0.0127,
+          "apr_estimate": -0.0106,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -99.405686
+          "score": -94.997795
         },
         {
           "apr_estimate": 0.0,
@@ -291,11 +291,11 @@
           "score": -30.0
         },
         {
-          "apr_estimate": -0.0119,
+          "apr_estimate": -0.0104,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -97.601133
+          "score": -94.634238
         },
         {
           "apr_estimate": 0.0,
@@ -305,18 +305,18 @@
           "score": -30.0
         },
         {
-          "apr_estimate": -0.0126,
+          "apr_estimate": 0.0,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -99.461419
+          "score": -30.0
         },
         {
-          "apr_estimate": -0.0108,
+          "apr_estimate": -0.0122,
           "phase": "STANDARD_EVOLVE",
           "reason": "",
           "regime": "SIDEWAYS_BEAR_RANGE",
-          "score": -95.504657
+          "score": -98.572734
         },
         {
           "apr_estimate": 0.0,
