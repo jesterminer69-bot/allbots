@@ -1,6 +1,6 @@
 {
   "schema": "allbots_status_1_0_0",
-  "generated_at": "2026-05-12T02:23:32Z",
+  "generated_at": "2026-05-12T02:28:36Z",
   "generator": {
     "app": "profit-github github_update.py",
     "version": "1.0.4-session-pulse"
@@ -23,12 +23,12 @@
       "status": "idle",
       "notes": [],
       "source_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v2\\status\\status.json",
-      "source_updated_at": "2026-05-12T02:23:31Z",
+      "source_updated_at": "2026-05-12T02:28:35Z",
       "app": "Profit Monkey V2",
       "version": "2.2.3-apr-preserving-promotions",
       "current_run": "transition_exit_lab",
-      "current_goal": "Transition Exit Lab cycle complete; starting next cycle soon",
-      "phase": "sleep_between_cycles",
+      "current_goal": "Pre-scanning transition carry-in samples 150/2438",
+      "phase": "pre_scan_boundary_positions",
       "director_cycle": null,
       "aggression_mode": null,
       "progressive_level": null,
@@ -54,8 +54,8 @@
       "errors": [],
       "warnings": [],
       "session_metrics": {
-        "session_key": "2026-05-12 02:23:31.594935+00:00",
-        "started_tracking_at": "2026-05-12T02:23:32Z",
+        "session_key": "2026-05-12 02:28:35.902682+00:00",
+        "started_tracking_at": "2026-05-12T02:28:36Z",
         "promotions_this_session": 0,
         "estimated_apr": {
           "start": null,
